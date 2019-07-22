@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Usuarios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item (click)="DetallesUser(user)" *ngFor="let user of usuario">
+    
+    <ion-avatar>
+      <img src="{{user.photo}}">
+    </ion-avatar>
+
+    <ion-label>{{ user.name }} - {{ user.las }}</ion-label>
+  </ion-item>
+</ion-content>

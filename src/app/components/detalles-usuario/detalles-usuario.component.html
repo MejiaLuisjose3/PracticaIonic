@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="Regresar()">
+            <ion-icon slot="start" name="arrow-round-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Detalles
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    
+      <ion-card>
+        <img src="{{Datos.photo}}" alt="">
+          <ion-card-header>
+            <ion-card-subtitle>{{Datos.phone}}</ion-card-subtitle>
+            <ion-card-title>{{Datos.name}} - {{ Datos.las }}</ion-card-title>
+            <ion-label>Edad: {{Datos.age}}</ion-label> 
+          </ion-card-header>
+        
+          <ion-card-content>
+            {{Datos.lorem}}
+          </ion-card-content>
+        </ion-card>
+
+    
+  </ion-content>
